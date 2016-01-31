@@ -1,0 +1,26 @@
+uuid: 296fc640-2597-4492-9e00-fdd07d5218e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.review_request.body
+    - node.type.review_request
+  module:
+    - text
+    - user
+id: node.review_request.teaser
+targetEntityType: node
+bundle: review_request
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

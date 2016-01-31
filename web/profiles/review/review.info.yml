@@ -1,0 +1,38 @@
+name: Review queue
+type: profile
+description: Review queue manager.
+core: 8.0.x
+
+distribution:
+  name: Review queue
+#  install:
+#    theme: themename
+
+dependencies:
+  - ctools
+  - node
+  - block
+  - breakpoint
+  - ckeditor
+  - config
+  - contextual
+  - datetime
+  - quickedit
+  - editor
+  - help
+  - image
+  - options
+  - path
+  - page_cache
+  - responsive_image
+  - dynamic_page_cache
+  - taxonomy
+  - dblog
+  - shortcut
+  - toolbar
+  - file
+  - views
+  - tour
+themes:
+  - bartik
+  - seven

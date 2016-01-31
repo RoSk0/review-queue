@@ -1,0 +1,23 @@
+uuid: 675a9d33-0976-4101-9922-34c38d63e41d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_url
+    - node.type.review_request
+  module:
+    - link
+id: node.review_request.field_review_url
+field_name: field_review_url
+entity_type: node
+bundle: review_request
+label: 'Review URL'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

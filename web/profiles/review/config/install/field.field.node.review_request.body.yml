@@ -1,0 +1,22 @@
+uuid: e45acfef-f5d0-48ed-bf00-c99047146479
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.review_request
+  module:
+    - text
+id: node.review_request.body
+field_name: body
+entity_type: node
+bundle: review_request
+label: Description
+description: 'Put description of the changes in the request so it would be easier to review to understand the code and suggest better/alternative approach.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,45 @@
+uuid: 5f1e42db-b739-48a8-9d00-0fc8dfbd7c7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.review_request.body
+    - field.field.node.review_request.field_review_url
+    - field.field.node.review_request.field_reviewer
+    - node.type.review_request
+  module:
+    - link
+    - text
+    - user
+id: node.review_request.default
+targetEntityType: node
+bundle: review_request
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_review_url:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_reviewer:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+hidden: {  }
